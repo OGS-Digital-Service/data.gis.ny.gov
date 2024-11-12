@@ -1,0 +1,19 @@
+{
+  "name": "data.gis.ny.gov",
+  "version": "1.0.0",
+  "description": "ArcGIS Hub Navigation and Components for https://data.gis.ny.gov",
+  "main": "index.js",
+  "scripts": {
+   "test": "pa11y-ci",
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "OGS Digital Service",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "pa11y-ci": "^3.1.0",
+    "pa11y-ci-reporter-html": "^7.0.0"
+  }
+}
