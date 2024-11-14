@@ -833,7 +833,6 @@
     align-items: center;
     justify-content: center;
     padding: 15px;
-    margin-top: 25px;
 }
 
 .nysds-state-logo-footer {
@@ -878,6 +877,54 @@
     text-decoration: underline;
 }
 
+.global-footer {
+    display: flex;
+    background: #f3d3c1;
+}
+
+.global-footer-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0;
+}
+
+.global-footer-heading {
+    font-size: 20px;
+    font-weight: bold !important;
+    font-family: 'Figtree' sans-serif;
+    margin:10px 10px 35px 45px;
+    min-width: 27%;
+}
+
+.global-footer-separator {
+    height: 1rem;
+    width: 0.1rem;
+    border: 1px black solid;
+    margin: 0 10px 0 7px;
+}
+.global-footer-list {
+    list-style-type: '';
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 35px;
+    margin-right: 5%;
+    margin-bottom: 0;
+}
+
+.global-footer-list li {
+    margin: 10px 20px;
+}
+
+.global-footer-links {
+    color: #000 !important;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.global-footer-links:focus {
+    text-decoration: underline !important;
+}
+
 @media (min-width: 992px) {
     .universal-footer{
         flex-direction: row;
@@ -888,6 +935,16 @@
     .universal-footer-list li {
         margin-top: 0;
     }
+    .global-footer-nav {
+        align-items: center;
+        flex-direction: row;
+    }
+    .global-footer-list {
+        padding-left: 0;
+    }
+    .global-footer-heading {
+        margin:10px 10px 10px 45px;
+    } 
 }
 .highlight-container {
     display: flex;
@@ -1706,7 +1763,50 @@
 <div style="height: 400px"> nothing to see here yet </div>
     </div>
         <!-- universal-footer footer area -->
- 
+<div class="global-footer">
+  <nav class="global-footer-nav" aria-label="Geospatial Services Site Footer">
+    <h2 class="global-footer-heading">GIS Data <span class="global-footer-separator" aria-hidden="true"></span> NYS GIS Clearinghouse</h2>
+    <ul class="global-footer-list">
+      
+        <li>
+          <a href="https://gis.ny.gov/about-us" class="global-footer-links">About Us</a>
+        </li>
+      
+        <li>
+          <a href="https://gis.ny.gov/accessibility" class="global-footer-links">Accessibility</a>
+        </li>
+      
+        <li>
+          <a href="https://gis.ny.gov/about-us" class="global-footer-links">Contact Us</a>
+        </li>
+      
+        <li>
+          <a href="https://gis.ny.gov/disclaimer" class="global-footer-links">Disclaimer</a>
+        </li>
+      
+        <li>
+          <a href="https://its.ny.gov/foil" class="global-footer-links">Freedom of Information Law (FOIL)</a>
+        </li>
+      
+        <li>
+          <a href="https://its.ny.gov/language-access" class="global-footer-links">Language Access</a>
+        </li>
+      
+        <li>
+          <a href="https://gis.ny.gov/privacy-policy" class="global-footer-links">Privacy Policy</a>
+        </li>
+      
+        <li>
+          <a href="https://www.ny.gov/services/register-vote" class="global-footer-links">Register to Vote</a>
+        </li>
+      
+        <li>
+          <a href="https://whoswho.gis.ny.gov/whoswho/" class="global-footer-links">GIS Who&#39;s Who </a>
+        </li>
+      
+    </ul>
+  </nav>
+</div>
  <!-- universal footer area -->
 <div class="">
   <nav class="universal-footer" aria-label="NYS universal-footer Footer Menu">

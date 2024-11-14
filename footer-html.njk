@@ -4,5 +4,44 @@ permalink: ../_DISTRIBUTION/footer.html
 ---
  {% from './_includes/_components.njk' import footer  %}
       {{ 
-        footer({})
+        footer({
+          links:[
+            {
+              text:"About Us",
+              url:"https://gis.ny.gov/about-us"
+            },
+            {
+              text:"Accessibility",
+              url:"https://gis.ny.gov/accessibility"
+            },
+            {
+              text:"Contact Us",
+              url:"https://gis.ny.gov/about-us"
+            },
+            {
+              text:"Disclaimer",
+              url:"https://gis.ny.gov/disclaimer"
+            },
+            {
+              text:"Freedom of Information Law (FOIL)",
+              url:"https://its.ny.gov/foil"
+            },
+            {
+              text:"Language Access",
+              url:"https://its.ny.gov/language-access"
+            },
+            {
+              text:"Privacy Policy",
+              url:"https://gis.ny.gov/privacy-policy"
+            },
+            {
+              text:"Register to Vote",
+              url:"https://www.ny.gov/services/register-vote"
+            },
+            {
+              text:"GIS Who's Who ",
+              url:"https://whoswho.gis.ny.gov/whoswho/"
+            }
+          ]
+        })
       }} 

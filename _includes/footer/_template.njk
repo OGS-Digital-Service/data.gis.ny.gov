@@ -1,5 +1,16 @@
-  <!-- universal-footer footer area -->
- 
+<!-- universal-footer footer area -->
+<div class="global-footer">
+  <nav class="global-footer-nav" aria-label="Geospatial Services Site Footer">
+    <h2 class="global-footer-heading">GIS Data <span class="global-footer-separator" aria-hidden="true"></span> NYS GIS Clearinghouse</h2>
+    <ul class="global-footer-list">
+      {% for nav in params.links %}
+        <li>
+          <a href="{{nav.url}}" class="global-footer-links">{{nav.text}}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
  <!-- universal footer area -->
 <div class="">
   <nav class="universal-footer" aria-label="NYS universal-footer Footer Menu">
