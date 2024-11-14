@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="NYS GIS Data Clearinghouse - DEVELOP">
+    <meta name="description" content="NYS GIS Data Hub  - DEVELOP">
     <meta name="generator" content="11ty/eleventy">    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -295,10 +295,17 @@
 .global-nav-menu {
     float: left !important;
     margin-left: 25px;
+    border-color: transparent !important;
 }
 
 .global-nav-menu:hover {
     background: none !important;
+    border-color: #fff !important;
+}
+
+.global-nav-menu:focus {
+    background: none !important;
+    border-color: #fff !important;
 }
 
 .global-nav-title {
@@ -326,7 +333,7 @@
     color:#fff;
     font-weight: bold;
     padding: 0 40px;
-    text-transform: uppercase;
+    
 }
 
 .global-nav-links a:hover {
@@ -415,6 +422,7 @@
 @media (min-width: 992px) {
     .global-nav-list-desktop {
         display: flex;
+        align-items: center;
     }
     
     .global-nav-list-mobile {
@@ -458,7 +466,7 @@
     }
 
     .global-nav-links a {
-        padding: 0 25px;
+        padding: 0 15px;
     }
 }
 
@@ -1564,7 +1572,7 @@
         margin: 0 auto;
       }
     </style>
-    <title>NYS GIS Data Clearinghouse - DEVELOP</title>
+    <title>NYS GIS Data Hub  - DEVELOP</title>
   </head>
   <body class="">
   <a href="#main-site-content-for-skiplink" class="sr-only focus:not-sr-only text-blue-700 underline">Skip to Main Content</a>
@@ -1586,14 +1594,15 @@
         <span class="icon-bar"></span>
       </button>
       <h1 class="global-nav-title">
-          <a href="/"> NYS GIS Clearinghouse</a>
+          <a href="/"> NYS GIS Data </a>
       </h1>
     </div>
     <div class="collapse" id="global-navigation">
         <div class="navbar global-nav-link-container">
-          <ul class="list-unstyled global-nav-links global-nav-list-desktop">
+          <ul class="list-unstyled global-nav-links global-nav-list-desktop"> <!-- desktop nav -->
 
-            <li><a href="https://gis.ny.gov/">NYS GIS Resources</a></li>
+            <li><a href="https://gis.ny.gov/">NYS Geospatial Services</a></li>
+
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Coordination <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -1605,28 +1614,49 @@
                     <li><a href="https://whoswho.gis.ny.gov/whoswho/">GIS Who's Who</a></li>
                 </ul>
             </li>
+
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Programs <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Data Services <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="https://gis.ny.gov/parcels">Parcels</a></li>
                     <li><a href="https://gis.ny.gov/streets-addresses">Streets & Addresses</a></li>
                     <li><a href="https://gis.ny.gov/orthoimagery">Orthoimagery</a></li>
                     <li><a href="https://gis.ny.gov/elevation-0">Elevation</a></li>
                     <li><a href="https://gis.ny.gov/civil-boundaries">Civil Boundaries</a></li>
-                    <li><a href="https://gis.ny.gov/public-safety-gis-program">Public Safety GIS</a></li>
-                    <li><a href="https://gis.ny.gov/sharegis">ShareGIS</a></li>
-                    <li><a href="https://gis.ny.gov/gis-nys-agencies">GIS at NYS Agencies</a></li>
+                    <li><a href="https://gis.ny.gov/civil-boundaries">Data Improvement</a></li>
+                    
                 </ul>
             </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Enterprise Services <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">GeoHub</a></li>
+                    <li><a href="#">AppDev</a></li>
+                     <li><a href="https://gis.ny.gov/sharegis">ShareGIS</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Client Services <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://gis.ny.gov/public-safety-gis-program">Public Safety GIS</a></li>
+                  <li><a href="https://gis.ny.gov/gis-nys-agencies">GIS at NYS Agencies</a></li>
+                </ul>
+            </li>
+
             <li><a href="https://gis.ny.gov/frequently-asked-questions">FAQs</a></li>
             <li><a href="https://gis.ny.gov/about-us">About Us</a></li>
 
           </ul>
 
 
-          <ul class="list-unstyled global-nav-links global-nav-list-mobile">
 
-            <li><a href="https://gis.ny.gov/" data-toggle="collapse" data-target="#global-navigation">NYS GIS Resources</a></li>
+
+          <ul class="list-unstyled global-nav-links global-nav-list-mobile"> <!-- mobile/tablet nav -->
+
+            <li><a href="https://gis.ny.gov/">NYS Geospatial Services</a></li>
+
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Coordination <span class="caret"></span></a>
                 <ul class="dropdown-menu">
@@ -1638,21 +1668,40 @@
                     <li><a href="https://whoswho.gis.ny.gov/whoswho/" data-toggle="collapse" data-target="#global-navigation">GIS Who's Who</a></li>
                 </ul>
             </li>
+
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Programs <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Data Services <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                     <li><a href="https://gis.ny.gov/parcels" data-toggle="collapse" data-target="#global-navigation">Parcels</a></li>
                     <li><a href="https://gis.ny.gov/streets-addresses" data-toggle="collapse" data-target="#global-navigation">Streets & Addresses</a></li>
                     <li><a href="https://gis.ny.gov/orthoimagery" data-toggle="collapse" data-target="#global-navigation">Orthoimagery</a></li>
                     <li><a href="https://gis.ny.gov/elevation-0" data-toggle="collapse" data-target="#global-navigation">Elevation</a></li>
                     <li><a href="https://gis.ny.gov/civil-boundaries" data-toggle="collapse" data-target="#global-navigation">Civil Boundaries</a></li>
-                    <li><a href="https://gis.ny.gov/public-safety-gis-program" data-toggle="collapse" data-target="#global-navigation">Public Safety GIS</a></li>
-                    <li><a href="https://gis.ny.gov/sharegis" data-toggle="collapse" data-target="#global-navigation">ShareGIS</a></li>
-                    <li><a href="https://gis.ny.gov/gis-nys-agencies" data-toggle="collapse" data-target="#global-navigation">GIS at NYS Agencies</a></li>
+                    <li><a href="https://gis.ny.gov/civil-boundaries" data-toggle="collapse" data-target="#global-navigation">Data Improvement</a></li>
+                    
                 </ul>
             </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Enterprise Services <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#" data-toggle="collapse" data-target="#global-navigation">GeoHub</a></li>
+                    <li><a href="#" data-toggle="collapse" data-target="#global-navigation">AppDev</a></li>
+                     <li><a href="https://gis.ny.gov/sharegis" data-toggle="collapse" data-target="#global-navigation">ShareGIS</a></li>
+                </ul>
+            </li>
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="" role="button">Client Services <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="https://gis.ny.gov/public-safety-gis-program" data-toggle="collapse" data-target="#global-navigation">Public Safety GIS</a></li>
+                  <li><a href="https://gis.ny.gov/gis-nys-agencies" data-toggle="collapse" data-target="#global-navigation">GIS at NYS Agencies</a></li>
+                </ul>
+            </li>
+
             <li><a href="https://gis.ny.gov/frequently-asked-questions" data-toggle="collapse" data-target="#global-navigation">FAQs</a></li>
             <li><a href="https://gis.ny.gov/about-us" data-toggle="collapse" data-target="#global-navigation">About Us</a></li>
+
 
           </ul>
 
@@ -1660,10 +1709,13 @@
           
         </div>
     </div>
-  </nav> 
+  </nav>
+
+
+   
       <div class="bootstrap-page-container">
     
-<h1> NYS GIS Data Clearinghouse - DEVELOP </h1>
+<h1> NYS GIS Data Hub  - DEVELOP </h1>
 <div style="height: 400px"> nothing to see here yet </div>
     </div>
        <!-- global footer area -->
