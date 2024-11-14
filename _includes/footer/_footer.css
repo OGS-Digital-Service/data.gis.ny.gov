@@ -64,7 +64,7 @@
     font-size: 20px;
     font-weight: bold !important;
     font-family: 'Figtree' sans-serif;
-    margin:10px 10px 35px 45px;
+    margin:10px 10px 30px 45px;
     min-width: 27%;
 }
 
@@ -78,13 +78,13 @@
     list-style-type: '';
     display: flex;
     flex-wrap: wrap;
-    padding-left: 25px;
+    padding-left: 30px;
     margin-right: 5%;
     margin-bottom: 0;
 }
 
 .global-footer-list li {
-    margin: 10px 20px;
+    margin: 10px 15px;
 }
 
 .global-footer-links {
